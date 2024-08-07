@@ -14,10 +14,19 @@ import BookList from './components/BookList';
 
 function App(){
        const [books, setBooks] = useState([]);
-       const createBook = (title) => {
+       const createBook = async (title) => {
+              const response = await fetch('http://localhost:3001/books', {
+                     method: 'POST',
+                     headers: {
+                            'Content-Type': 'application/json'
+                     },
+                     body: JSON.stringify({title: title})
+              });
+              const responseData = await response.json();
+
               const updatedBooks = [
                      ...books,
-                     {id: Math.round(Math.random() * 999), title}
+                     responseData
               ];       
               setBooks(updatedBooks);
        }
