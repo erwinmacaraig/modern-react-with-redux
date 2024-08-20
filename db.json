@@ -5,19 +5,11 @@
       "id": 1
     },
     {
-      "title": "Two Towers",
-      "id": 2
-    },
-    {
       "title": "The Mentalist",
       "id": 3
     },
     {
-      "title": "Batman Begins",
-      "id": 4
-    },
-    {
-      "title": "Hello Love! Good bye",
+      "title": "See you soon!",
       "id": 5
     },
     {
@@ -29,7 +21,7 @@
       "id": 7
     },
     {
-      "title": "The Dungeon of Doom",
+      "title": "The Lights of Doom",
       "id": 8
     }
   ]
