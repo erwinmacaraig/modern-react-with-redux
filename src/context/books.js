@@ -1,11 +1,11 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useCallback } from "react";
 
 const BooksContext = createContext();
 
 function Provider({children}){
     const [books, setBooks] = useState([]);
 
-       const fetchBooks = async () => {
+       const fetchBooks = useCallback( async () => {
               const response = await fetch('http://localhost:3001/books', {
                      method: 'GET',
                      headers: {
@@ -14,7 +14,8 @@ function Provider({children}){
               });
               const responseData = await response.json();
               setBooks(responseData);
-       };
+       }, []);
+       
        const createBook = async (title) => {
         const response = await fetch('http://localhost:3001/books', {
                method: 'POST',
