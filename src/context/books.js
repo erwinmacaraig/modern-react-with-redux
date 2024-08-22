@@ -53,7 +53,7 @@ function Provider({children}){
  };
 
  const deleteBookById = async (id) => {
-        let response = await fetch(`http://localhost:3001/books/${id}`, {
+        await fetch(`http://localhost:3001/books/${id}`, {
                method: 'DELETE',
                headers: {
                       'Content-Type': 'application/json'
