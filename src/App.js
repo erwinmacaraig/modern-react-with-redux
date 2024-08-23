@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <div>
-        <Button success primary rounded outline>
+        <Button primary rounded outline>
           Click Me Baby
         </Button>
       </div>
@@ -25,6 +25,11 @@ function App() {
       </div>
 
       <Button warning>See Deal</Button>
+      <div>
+        <Button primary rounded>
+          Something!
+        </Button>
+      </div>
     </div>
   );
 }
