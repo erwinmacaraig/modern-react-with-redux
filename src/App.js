@@ -10,10 +10,13 @@ import MyBooks from "./pages/MyBooks";
 //==========================
 import Button from "./components/Button";
 function App() {
+       const handleClick = () => {
+              console.log("I was clicked!");
+       };
   return (
     <div>
       <div>
-        <Button primary rounded outline>
+        <Button onClick={handleClick} primary rounded outline>
           Click Me Baby
         </Button>
       </div>
