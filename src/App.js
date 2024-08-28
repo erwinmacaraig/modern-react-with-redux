@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <div>
-        <Button onClick={handleClick} primary rounded outline>
+        <Button onClick={handleClick} className="mb-5" primary rounded outline>
           Click Me Baby
         </Button>
       </div>
